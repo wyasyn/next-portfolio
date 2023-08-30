@@ -66,8 +66,23 @@
                     -o-transition: var(--transition);
                     transition: var(--transition);
                     font-size: 0.875rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.4rem;
+                    svg {
+                        visibility: hidden;
+                    }
                     &:hover {
                         color: var(--primary);
+                        svg {
+                            visibility: visible;
+                        }
+                    }
+                    &.active {
+                        color: var(--primary);
+                        svg {
+                            visibility: visible;
+                        }
                     }
                 }
                  @media screen and (max-width:48rem){

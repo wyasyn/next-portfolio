@@ -7,6 +7,7 @@ import {linkData} from '@/constants/data'
 import { useTheme } from '../contexts/ThemeContext'
 import { motion } from 'framer-motion'
 import { RiMenu4Fill, RiCloseFill } from 'react-icons/ri'
+import { usePathname } from 'next/navigation'
 
 export default function NavBar() {
 
@@ -55,6 +56,8 @@ export default function NavBar() {
 
     const { theme, toggleTheme } = useTheme();
 
+    const pathname = usePathname()
+
   return (
     <header className={theme}>
         <nav className={isVisible ? "nav-top " : "nav-top hidden"}>
@@ -71,13 +74,18 @@ export default function NavBar() {
                 <div className="right flex">
                     <ul className="desktop-nav flex">
                             {
-                                linkData.map((item, index) => (
-                                    <li key={index} >
-                                        <Link href={item.url} className='nav-link'>
-                                            {item.name}
-                                        </Link>
-                                    </li>
-                                ))
+                                linkData.map((link) => {
+                                    const isActive = pathname === link.url
+                                    return (
+                                      <Link
+                                        className={isActive ? 'nav-link active' : 'nav-link'}
+                                        href={link.url}
+                                        key={link.name}
+                                      >
+                                        {link.icon} {link.name}
+                                      </Link>
+                                    )
+                                })
                             }
                     </ul>
                     <div className={`switch ${theme}`} onClick={toggleTheme}>
