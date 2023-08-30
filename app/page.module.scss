@@ -1,0 +1,19 @@
+.main {
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: var(--bg400);
+  color: var(--clr-text);
+  font-size: 1.3rem;
+  line-height: 1.6;
+  width: 100%;
+  section {
+    padding-block: 7em;
+    &:nth-child(odd){
+      background-color: var(--bg500);
+    }
+  }
+  
+}
+
+
+
