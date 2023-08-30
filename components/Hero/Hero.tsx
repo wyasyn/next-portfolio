@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import './Hero.scss'
+import { socialsData } from '@/constants/data'
+import { HiOutlineDownload, HiMail } from 'react-icons/hi'
 
 export default function Hero() {
   return (
@@ -12,15 +14,24 @@ export default function Hero() {
                 <strong
                     className='heading-name'
                     >
-                    Yasin Walum &nbsp;
+                    Yasin Walum
                 </strong>
                 <p className='title'>
                     front-end developer
                 </p>
             </h1>
             <div className="cta flex">
-                <Link href="/contact" className="btn btn-secondary">hire me</Link>
-                <a href='/assets/resume.pdf' className="btn" download='resume' >download cv </a>
+                <Link href="/contact" className="btn btn-secondary">hire me <HiMail /></Link>
+                <a href='/assets/resume.pdf' className="btn" download='resume' >download cv <HiOutlineDownload /></a>
+            </div>
+            <div className="socials flex">
+                {
+                    socialsData.map((data, index) => (
+                        <a href={data.url} className='social-icon center' key={index}>
+                            {data.icon}
+                        </a>
+                    ))
+                }
             </div>
         </div>
     </article>

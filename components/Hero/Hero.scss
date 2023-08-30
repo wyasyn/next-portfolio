@@ -1,12 +1,64 @@
 .hero-container {
+    margin-top: 5em;
     .left {
+        .hello {
+            font-size: 1.125rem;
+            color: var(--clr-text);
+            font-weight: 500;
+        }
+        .heading-name {
+            font-size: 3.125rem;
+            margin: .1em 0;
+            letter-spacing: 0.2rem;
+            color: var(--primary);
+            line-height: 1;
+        }
+        .title {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
         .cta {
             gap: 1rem;
+            margin: 3em 0;
+            align-items: center;
+            text-transform: uppercase;
+            font-weight: 500;
             .btn {
-                font-size: 0.85rem;
+                font-size: 0.875rem;
+                @media screen and (max-width:20.875rem) {
+                    font-size: 0.85rem;
+                }
             }
-            @media screen and (max-width:16.625rem) {
+            @media screen and (max-width:23.25rem) {
                 flex-direction: column;
+            }
+        }
+        .socials {
+            align-items: center;
+            gap: 1.5rem;
+            .social-icon {
+                height: 2.5rem;
+                width: 2.5rem;
+                border: 1px solid var(--primary);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                border-radius: 50%;
+                svg {
+                    color: var(--primary);
+                    font-size: 0.875rem;
+                }
+                &:hover {
+                    border: none;
+                    background-color: var(--primary);
+                    svg {
+                        color: var(--bg500);
+                    }
+                }
             }
         }
     }

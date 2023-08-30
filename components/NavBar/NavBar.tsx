@@ -102,26 +102,13 @@ export default function NavBar() {
                         {
                             linkData.map((item, index) => (
                                 <li key={index} onClick={closeMenu}>
-                                    <Link href={item.url} className='nav-link'>
-                                        {item.name}
+                                    <Link href={item.url} className='nav-link flex'>
+                                        {item.icon} {item.name}
                                     </Link>
                                 </li>
                             ))
                         }
                     </ul>
-                    <Link href='/contact' className="profile center">
-                        <Image
-                            src='/assets/blogMe.jpg'
-                            alt='profile pic'
-                            width={48}
-                            height={48}
-                            objectFit='cover'
-                            className='nav-pic'
-                         />
-                         <p className="name">
-                            Yasin Walum
-                         </p>
-                    </Link>
                 </nav>
             )
         }
