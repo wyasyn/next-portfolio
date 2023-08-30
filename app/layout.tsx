@@ -2,10 +2,7 @@
 import { Footer, NavBar } from '@/components'
 import './globals.scss'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import { ThemeProvider } from '@/components/contexts/ThemeContext'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Yasin Walum | Web Developer Portfolio",
@@ -59,11 +56,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <ThemeProvider>
           <header>
               <NavBar />
-              </header>
+          </header>
               {children}
               <Footer />
         </ThemeProvider>
