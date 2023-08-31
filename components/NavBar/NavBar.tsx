@@ -62,14 +62,27 @@ export default function NavBar() {
     <header className={theme}>
         <nav className={isVisible ? "nav-top " : "nav-top hidden"}>
             <div className="nav-container container flex">
+                <button className='menu center' onClick={openMenu}>
+                    <span className='hidden'>Menu</span>
+                      <RiMenu4Fill />
+                </button>
                 <Link href='/' className='logo center' >
+                  {
+                    theme === 'dark' ?
                     <Image
-                        src='/assets/logoshade.svg'
-                        width={24}
-                        height={32}
-                        alt='logo'
-                        loading='lazy'
-                     />
+                      src='/assets/logo-white-monkey.svg'
+                      width={24}
+                      height={32}
+                      alt='logo'
+                    /> 
+                 :
+                  <Image
+                    src='/assets/logo-monkey.svg'
+                    width={24}
+                    height={32}
+                    alt='logo'
+                />
+                  }
                 </Link>
                 <div className="right flex">
                     <ul className="desktop-nav flex">
@@ -91,10 +104,6 @@ export default function NavBar() {
                     <div className={`switch ${theme}`} onClick={toggleTheme}>
                     <motion.div className={`handle ${theme}`} layout transition={spring} />
                     </div>
-                    <button className='menu center' onClick={openMenu}>
-                        <span className='hidden'>Menu</span>
-                            <RiMenu4Fill />
-                    </button>
                 </div>
             </div>
         </nav>

@@ -20,6 +20,18 @@
     .nav-container {
         align-items: center;
         justify-content: space-between;
+           .menu {
+                background-color: transparent;
+                cursor: pointer;
+                color: var(--clr-text);
+                font-size: 1.6rem;
+                .hidden {
+                    display: none;
+                }
+                 @media screen and (min-width:48rem){
+                    display: none;
+                }
+            }
         .right {
             align-items: center;
             gap: 2rem;
@@ -86,18 +98,6 @@
                     }
                 }
                  @media screen and (max-width:48rem){
-                    display: none;
-                }
-            }
-            .menu {
-                background-color: transparent;
-                cursor: pointer;
-                color: var(--clr-text);
-                font-size: 1.6rem;
-                .hidden {
-                    display: none;
-                }
-                 @media screen and (min-width:48rem){
                     display: none;
                 }
             }
