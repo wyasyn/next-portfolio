@@ -1,0 +1,44 @@
+.testimony {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 50rem;
+    background-color: var(--bg400);
+    text-align: center;
+    padding: 1.875rem 6.625rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-radius: 1rem;
+    gap: 2rem;
+    white-space: normal;
+    .pic {
+        width: 5rem;
+        height: 5rem;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            height: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .name {
+        .comment {
+            margin-bottom: 1.8em;
+            @media screen and (max-width:31.625rem) {
+                font-size: 0.7rem;
+            }
+        }
+        h3 {
+            margin-bottom: 0.2em;
+        }
+    }
+}

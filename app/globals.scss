@@ -18,8 +18,8 @@ img {
 }
 
 .light {
-    --bg400: #fff;
-    --bg500: #f5f9fc;
+    --bg400: #eee;
+    --bg500: #dee4e7;
     --clr-text: #595959;
     --clr-heading: #1c1c1c;
     --primary: #2192FF;
@@ -132,4 +132,14 @@ a {
     &:hover {
         opacity: .75;
     }
+}
+
+.relative {
+    position: relative;
+}
+.absolute {
+    position:absolute;
+}
+.hide {
+    display: none;
 }

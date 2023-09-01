@@ -1,0 +1,38 @@
+.banner {
+    top: -1rem;
+    gap: 2rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 2rem;
+    .ban {
+        min-width: 10rem;
+        flex-direction: column;
+        gap: 0.3rem;
+        border: 1px solid var(--clr-text);
+        padding: 1em;
+        background-color: var(--bg500);
+        -webkit-border-radius: 0.5em;
+        -moz-border-radius: 0.5em;
+        -ms-border-radius: 0.5em;
+        -o-border-radius: 0.5em;
+        border-radius: 0.5em;
+        -webkit-transition: var(--transition);
+        -moz-transition: var(--transition);
+        -ms-transition: var(--transition);
+        -o-transition: var(--transition);
+        transition: var(--transition);
+        svg {
+            font-size: 1.2rem;
+        }
+        &:hover {
+            background-color: var(--bg400);
+        }
+    }
+    @media screen and (max-width:36rem) {
+        display: none;
+    }
+}

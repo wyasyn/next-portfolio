@@ -63,7 +63,7 @@ export default function NavBar() {
         <nav className={isVisible ? "nav-top " : "nav-top hidden"}>
             <div className="nav-container container flex">
                 <button className='menu center' onClick={openMenu}>
-                    <span className='hidden'>Menu</span>
+                    <span className='hide'>Menu</span>
                       <RiMenu4Fill />
                 </button>
                 <Link href='/' className='logo center' >

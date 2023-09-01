@@ -1,5 +1,5 @@
 "use client"
-import { Hero } from '@/components'
+import { Banner, Feature, Hero, Testimonial } from '@/components'
 import styles from './page.module.scss'
 import { useTheme } from '@/components/contexts/ThemeContext'
 
@@ -11,14 +11,12 @@ export default function Home() {
         <section>
           <Hero />
         </section>
-        <section>
-          about
+        <section className='relative'>
+          <Banner />
+          <Feature />
         </section>
         <section>
-          portfolio
-        </section>
-        <section>
-          testimonial
+          <Testimonial />
         </section>
       </main>
     </div>
