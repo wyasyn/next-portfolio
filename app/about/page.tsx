@@ -7,7 +7,18 @@ export default function page() {
   return (
     <div className={theme}>
       <main className={styles.main}>
-        About
+        <section>
+          intro
+        </section>
+        <section>
+          skills
+        </section>
+        <section>
+          services
+        </section>
+        <section>
+          education
+        </section>
     </main>
     </div>
   )

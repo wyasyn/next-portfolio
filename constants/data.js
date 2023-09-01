@@ -68,12 +68,6 @@ export const FeaturedProjects = [
         link:"https://blogr256.netlify.app/",
         project: "website"
     },
-    {
-        title:"Personal Portfolio",
-        image:"/assets/project1.jpg",
-        link:"https://yasyn.netlify.app",
-        project: "website"
-    },
 ]
 
 export const TestimonialData = [

@@ -129,9 +129,16 @@
         flex-direction: column;
         gap: 2rem;
         .nav-link {
+            font-size: 1.6rem;
             color: var(--clr-heading);
             align-items: center;
             gap: 1em;
+            svg {
+                font-size: 2rem;
+            }
+            &.active {
+                color: var(--primary);
+            }
         }
     }
     @media screen and (min-width:48rem){

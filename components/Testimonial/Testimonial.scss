@@ -3,6 +3,9 @@
         color: var(--clr-heading);
         margin-block: 5em;
         text-align: center;
+        @media screen and (max-width:48rem) {
+            margin-block: 2em;
+        }
     }
     .testimonial-container {
         display: flex;
@@ -84,7 +87,7 @@
         }
         .indicators {
             position: absolute;
-            bottom: 0;
+            bottom: 2rem;
             left: 50%;
             -webkit-transform: translateX(-50%);
             -moz-transform: translateX(-50%);
@@ -105,6 +108,9 @@
                         color: var(--primary);
                     }
                 }
+            }
+            @media screen and (max-width:48rem) {
+                bottom: 3rem;
             }
         }
     }

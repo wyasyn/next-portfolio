@@ -7,8 +7,16 @@ export default function page() {
   return (
     <div className={theme}>
       <main className={styles.main}>
-        Contact
-    </main>
+        <section>
+          intro
+        </section>
+        <section>
+          contact fom
+        </section>
+        <section>
+          map
+        </section>
+      </main>
     </div>
   )
 }

@@ -7,7 +7,12 @@ export default function page() {
   return (
     <div className={theme}>
       <main className={styles.main}>
-        Portfolio
+        <section>
+          intro
+        </section>
+        <section>
+          projects
+        </section>
     </main>
     </div>
   )

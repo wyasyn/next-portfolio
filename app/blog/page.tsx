@@ -7,8 +7,13 @@ export default function page() {
   return (
     <div className={theme}>
       <main className={styles.main}>
-        Blog
-    </main>
+        <section>
+          into
+        </section>
+        <section>
+          blogs
+        </section>
+      </main>
     </div>
   )
 }

@@ -3,11 +3,14 @@
         color: var(--clr-heading);
         margin-block: 5em;
         text-align: center;
+        @media screen and (max-width:48rem) {
+            margin-block: 2em;
+        }
     }
     .projects {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-        gap: 1rem;
+        gap: 3rem;
         justify-items: center;
     }
     .cta {

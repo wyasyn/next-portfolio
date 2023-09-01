@@ -117,13 +117,18 @@ export default function NavBar() {
                     </div>
                     <ul className="nav-list container flex">
                         {
-                            linkData.map((item, index) => (
+                            linkData.map((item, index) => {
+                              const isActive = pathname === item.url
+                              return (
                                 <li key={index} onClick={closeMenu}>
-                                    <Link href={item.url} className='nav-link flex'>
+                                    <Link 
+                                    href={item.url} 
+                                    className={isActive ? 'nav-link flex active' : 'nav-link flex'}
+                                    >
                                         {item.icon} {item.name}
                                     </Link>
                                 </li>
-                            ))
+                            )})
                         }
                     </ul>
                 </nav>

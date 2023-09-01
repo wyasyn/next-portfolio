@@ -8,6 +8,11 @@
   width: 100%;
   section {
     padding-block: 7em;
+    @media screen and (max-width:48rem) {
+      &:not(:first-child){
+        padding-block: 2em;
+      }
+    }
     &:nth-child(odd){
       background-color: var(--bg500);
     }

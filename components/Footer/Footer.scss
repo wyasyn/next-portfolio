@@ -1,6 +1,71 @@
 .footer {
     background-color: var(--bg500);
-    padding-block: 1em;
+    padding-block: 3em;
     color: var(--clr-text);
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        .socials {
+            gap: 1rem;
+            .social-icon {
+                -webkit-transition: var(--transition);
+                -moz-transition: var(--transition);
+                -ms-transition: var(--transition);
+                -o-transition: var(--transition);
+                transition: var(--transition);
+                &:hover {
+                color: var(--primary);
+            }
+            }
+        }
+        .form {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            -webkit-border-radius: 1em;
+            -moz-border-radius: 1em;
+            -ms-border-radius: 1em;
+            -o-border-radius: 1em;
+            border-radius: 1em;
+            overflow: hidden;
+            border: 2px solid var(--primary);
+            color: var(--clr-text);
+            transition: var(--transition);
+            .label {
+                display: none;
+            }
+            .msg {
+                padding: 0.4em;
+                height: 100%;
+                background: transparent;
+                color: var(--clr-text);
+            }
+            .btn-form {
+                height: 100%;
+                background: transparent;
+                color: var(--primary);
+                cursor: pointer;
+                padding-inline: 0.7em;
+                span {
+                    display: none;
+                }
+            }
+            &:hover, &:focus, &:active {
+                border-color: var(--clr-text);
+            }
+        }
+        .c-right {
+            text-align: center;
+            text-wrap: balance;
+            font-size: 0.75rem;
+        }
+        @media screen and (max-width:48rem) {
+            flex-direction: column;
+            justify-content: center;
+            gap: 3rem;
+        }
+    }
 }
