@@ -18,14 +18,10 @@
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
         border-radius: 10px;
-        .img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-    }
-    .content {
         .icon {
+            top: 1rem;
+            left: 1rem;
+            z-index: 10;
             font-size: 0.65rem;
             color: var(--primary);
             padding: 0.2em 0.65em;
@@ -38,10 +34,32 @@
             -o-border-radius: 5px;
             border-radius: 5px;
         }
+        .img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            -webkit-transition: var(--transition);
+            -moz-transition: var(--transition);
+            -ms-transition: var(--transition);
+            -o-transition: var(--transition);
+            transition: var(--transition);
+        }
+    }
+    .content {
         .title {
             color: var(--clr-heading);
             font-size: 700;
             margin-block: 1em;
+            text-align: center;
+        }
+    }
+    &:hover {
+        .img {
+            -webkit-transform: scale(105%);
+            -moz-transform: scale(105%);
+            -ms-transform: scale(105%);
+            -o-transform: scale(105%);
+            transform: scale(105%);
         }
     }
 }

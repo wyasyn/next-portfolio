@@ -5,17 +5,30 @@ import type { Metadata } from 'next'
 import { ThemeProvider } from '@/components/contexts/ThemeContext'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ywalum.com'),
   title: "Yasin Walum | Web Developer Portfolio",
   description: "Yasin Walum - Web Developer Portfolio | Showcasing my creative projects and expertise in web development. Explore my work now!",
   keywords: "web development, react, scss, sass, web design, portfolio, projects, coding, programming, HTML, CSS, JavaScript, front-end, back-end, responsive design, web applications, software development, developer, coding skills, creative, UI/UX, technology, coding projects, programming languages, website development, software engineer, web solutions, digital portfolio, coding expertise",
-  robots: "index, follow",
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    }
+  },
   authors: {
     name: "Yasin Walum",
-    url: "https//ywalum.com"
+    url: "https://ywalum.com"
   } ,
   icons: {
     icon: "/assets/logoshade.svg",
-    apple: "/assets/favicon.jpg",
+    apple: "/assets/logoshade.svg",
   },
   openGraph: {
     title: "Yasin Walum | Web Developer Portfolio",
@@ -27,10 +40,14 @@ export const metadata: Metadata = {
         width: 183,
         height:204,
         alt: "Yasin Walum",
-      }
+      },
     ],
-    url: "https://ywalum.com",
+    locale: "en_us",
+    url: "/",
     type: "website"
+  },
+  alternates: {
+    canonical: "/"
   },
   twitter: {
     card: "summary_large_image",
@@ -44,9 +61,10 @@ export const metadata: Metadata = {
         alt: "Yasin Walum",
       }
     ],
-    site: "https://ywalum.com",
-    creator: "@wyasyn",
+    site: "@YasinWalum",
+    creator: "@YasinWalum",
   },
+  manifest: '/manifest.json'
 }
 
 export default function RootLayout({

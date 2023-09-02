@@ -13,7 +13,7 @@ function ProjectCard(props: Card) {
     const {image, title, link, project} = props
   return (
     <article className="project">
-        <div className="image">
+        <div className="image relative">
             <Image
                 src={image}
                 alt='image'
@@ -21,9 +21,9 @@ function ProjectCard(props: Card) {
                 height={720}
                 className='img'
              />
+            <p className="icon absolute">{project}</p>
         </div>
         <div className="content">
-            <p className="icon">{project}</p>
             <p className="title">
                 {title}
             </p>

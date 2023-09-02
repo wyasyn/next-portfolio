@@ -51,7 +51,7 @@ export const socialsData = [
 
 export const FeaturedProjects = [
     {
-        title:"RahStduio Portfolio",
+        title:"RahStduio Consults & Construction",
         image:"/assets/project4.jpg",
         link:"https://rahstudio.netlify.app/",
         project: "website"
