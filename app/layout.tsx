@@ -64,7 +64,8 @@ export const metadata: Metadata = {
     site: "@YasinWalum",
     creator: "@YasinWalum",
   },
-  manifest: '/manifest.json'
+  manifest: '/manifest.json',
+  category: 'web development',
 }
 
 export default function RootLayout({
