@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import './Testimony.scss'
 
 type TestimonyCard = {
@@ -12,7 +13,12 @@ export default function Testimony(props: TestimonyCard) {
   return (
     <div className="testimony">
     <div className="pic">
-        <img src={photo} alt="testimony" loading='lazy' />
+        <Image
+          src={photo}
+          alt='testimony'
+          width={80}
+          height={80}
+         />
     </div>
     <div className="name">
         <p className='comment'>{comment}</p>

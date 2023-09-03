@@ -4,7 +4,7 @@ import './Testimonial.scss'
 import { useState } from 'react';
 import { FaArrowLeft, FaArrowRight, FaCircle } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import { Testimony } from '..';
+import { HeadingSection, Testimony } from '..';
 
 export default function Testimonial() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -20,9 +20,9 @@ export default function Testimonial() {
       }
   return (
     <div className="testimonial container">
-        <h2>
-            What clients say about me
-        </h2>
+        <HeadingSection
+        title='What clients say about me!'
+         />
         <div className="testimonial-container">
         <motion.div
           whileInView={{ y: [50,0] }}

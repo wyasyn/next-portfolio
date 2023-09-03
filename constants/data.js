@@ -1,7 +1,8 @@
-import {FaTwitter, FaGithub, FaLinkedinIn, FaFacebookF} from 'react-icons/fa'
+import {FaTwitter, FaGithub, FaLinkedinIn, FaFacebookF, FaWhatsapp} from 'react-icons/fa'
 import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
 import { BsBell, BsBriefcase } from 'react-icons/bs'
-import { HiOutlineMail } from 'react-icons/hi'
+import { HiLocationMarker, HiOutlineMail } from 'react-icons/hi'
+import { FiMail } from 'react-icons/fi'
 export const linkData = [
     {
         url: '/',
@@ -69,6 +70,62 @@ export const FeaturedProjects = [
         project: "website"
     },
 ]
+export const ProjectsData = [
+    {
+        title:"RahStduio Consults & Construction",
+        image:"/assets/project4.jpg",
+        link:"https://rahstudio.netlify.app/",
+        project: "website"
+    },
+    {
+        title:"Loop Studio landing Page",
+        image:"/assets/project3.jpg",
+        link:"https://loopstudio256.netlify.app/",
+        project: "website"
+    },
+    {
+        title:"Blogr Landing Page",
+        image:"/assets/project2.jpg",
+        link:"https://blogr256.netlify.app/",
+        project: "website"
+    },
+    {
+        title:"Personal Portfolio",
+        image:"/assets/project1.jpg",
+        link:"https://yasyn.netlify.app",
+        project: "website"
+    },
+    {
+        title:"Grilli Restaurant",
+        image:"/assets/project5.jpg",
+        link:"https://zingy-conkies-89afef.netlify.app/",
+        project: "website"
+    },
+    {
+        title:"Insure Landing Page",
+        image:"/assets/project6.jpg",
+        link:"https://mellow-croissant-797345.netlify.app/",
+        project: "website"
+    },
+    {
+        title:"Huddle Landing Page",
+        image:"/assets/project7.jpg",
+        link:"https://huddle256.netlify.app/",
+        project: "website"
+    },
+    {
+        title:"Nike Shoe Show case",
+        image:"/assets/project8.jpg",
+        link:"https://gleeful-longma-0c7fd6.netlify.app/",
+        project: "website"
+    },
+    {
+        title:"Web developer Portfolio",
+        image:"/assets/projects9.jpeg",
+        link:"https://ywalum.com/",
+        project: "website"
+    },
+]
 
 export const TestimonialData = [
     {
@@ -103,3 +160,102 @@ export const TestimonialData = [
     },
 
   ]
+
+export const about = {
+    head: "Who Am I",
+    title: "About Me",
+    description: "Welcome to my portfolio website! I am thrilled to have you here and share my passion for web development. Through this platform, I aim to showcase my skills, experience, and creative projects in the digital realm."
+}
+export const portfolio = {
+    head: "Portfolio",
+    title: "Check my wonderful work",
+    description: "I am excited to showcase my skills and share my journey as I continue to explore and innovate in the ever-evolving world of front-end development."
+}
+export const blog = {
+    head: "Insights Unveiled",
+    title: "My Blogs",
+    description: "Explore captivating insights, practical tips, and personal anecdotes that illuminate the path in web development"
+}
+export const contactData = {
+    head: "Contact",
+    title: "Get in touch with me",
+    description: "I'm always looking for new ways to help people. If you have a question or need help, please don't hesitate to contact me."
+}
+
+export const BlogData = [
+    {
+        title:"Significance of Web Accessibility",
+        image:"/assets/fb1.jpg",
+        article:"Web accessibility is the practice of designing and developing websites and applications to ensure that people with disabilities can perceive, interact with, and navigate digital content effectively.",
+        link:"https://www.linkedin.com/pulse/front-end-developers-risk-best-replaced-ai-yasin-walum"
+    },
+    {
+        title:"Combining CSS Grid and Flexbox",
+        image:"/assets/fb2.jpg",
+        article:"Experiment, iterate, and explore different possibilities to create visually appealing and responsive designs using CSS Grid and Flexbox.",
+        link:"https://www.linkedin.com/pulse/why-you-need-website-your-business-yasin-walum"
+    },
+    {
+        title:"Comparing Modern Javascript FrameWorks:",
+        image:"/assets/fb3.jpg",
+        article:"React, Vue.js, and Angular each have their strengths and weaknesses. All three frameworks have thriving communities and are capable of building modern, responsive web applications",
+        link:"https://www.linkedin.com/pulse/importance-responsive-design-yasin-walum"
+    },
+    {
+        title:"SEO Optimization:",
+        image:"/assets/fb4.jpg",
+        article:"Optimizing website performance is crucial for delivering a great user experience, improving search engine rankings, and increasing conversions.",
+        link:"https://www.linkedin.com/pulse/importance-responsive-design-yasin-walum"
+    },
+    {
+        title:"State management in react:",
+        image:"/assets/fb5.jpg",
+        article:"State management is a critical aspect of building complex React applications, especially when you need to share and manage data across different components",
+        link:"https://www.linkedin.com/pulse/importance-responsive-design-yasin-walum"
+    },
+    {
+        title:"Main features of a Portfolio website:",
+        image:"/assets/fb6.jpg",
+        article:"A well-designed portfolio website is a crucial tool for showcasing your skills, work, and accomplishments.",
+        link:"https://www.linkedin.com/pulse/importance-responsive-design-yasin-walum"
+    },
+    {
+        title:"Role of AI in frond-end development",
+        image:"/assets/fb7.jpg",
+        article:"Front-end developers are not at immediate risk of being replaced by AI, but the role of front-end development is evolving alongside advancements in technology, including AI and automation",
+        link:"https://www.linkedin.com/pulse/front-end-developers-risk-best-replaced-ai-yasin-walum"
+    },
+    {
+        title:"Importance of Responsive Design:",
+        image:"/assets/fb8.jpg",
+        article:"Responsive design is crucial in today's digital landscape where users access websites and applications from a wide range of devices with varying screen sizes and orientations",
+        link:"https://www.linkedin.com/pulse/importance-responsive-design-yasin-walum"
+    },
+]
+
+export const ContactCardData = [
+    {
+        icon: <FaWhatsapp />,
+        title: "WhatsApp",
+        info: "Chat with Us",
+        link: "https://api.whatsapp.com/send?phone+256750771111"
+    },
+    {
+        icon: <FiMail />,
+        title: "Email",
+        info: "Send Us a Message",
+        link: "mailto:ywalum@gmail.com"
+    },
+    {
+        icon: <FaTwitter />,
+        title: "Twitter",
+        info: "X us @wyasyn",
+        link: "https://twitter.com/wyasyn/"
+    },
+    {
+        icon: <HiLocationMarker />,
+        title: "Location",
+        info: "Mbalwa, Kyaliwajjala, Wakiso, UG",
+        link: "#location"
+    },
+]

@@ -1,0 +1,18 @@
+.contact-card {
+   display: flex;
+   gap: 2rem;
+   align-items: center;
+   .icon {
+    color: var(--primary);
+    font-size: 2rem;
+   }
+   .card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    h4 {
+        color: var(--clr-heading);
+    }
+   }
+}

@@ -22,14 +22,14 @@ function ProjectCard(props: Card) {
                 className='img'
              />
             <p className="icon absolute">{project}</p>
+            <div className="link center absolute">
+                <a href={link} className="btn btn-primary" target='_blank' rel='noreferrer'>View</a>
+            </div>
         </div>
         <div className="content">
             <p className="title">
                 {title}
             </p>
-            <div className="link center">
-                <a href={link} className="btn btn-primary" target='_blank' rel='noreferrer'>View</a>
-            </div>
         </div>
     </article>
   )

@@ -1,0 +1,43 @@
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    @media screen and (max-width:48rem) {
+        grid-template-columns: 1fr;
+    }
+    .col-1 {
+        display: grid;
+        gap: 2rem;
+    }
+    .col-2 {
+        display: grid;
+        gap: 2rem;
+        h2 {
+            font-family: 'Recoleta';
+            color: var(--clr-heading);
+        }
+    }
+    .form {
+        display: grid;
+        gap: 2rem;
+        .btn {
+            cursor: pointer;
+        }
+        .inputs {
+            padding: 0.6em 1.25em;
+            background: transparent;
+            border: 1px solid var(--clr-text);
+            color: var(--clr-text);
+            opacity: 0.9;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+            resize: none;
+            &:hover, &:focus, &:active {
+                opacity: 1;
+            }
+        }
+    }
+}

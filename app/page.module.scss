@@ -7,7 +7,7 @@
   line-height: 1.6;
   width: 100%;
   section {
-    padding-block: 7em;
+    padding-block: 5em;
     @media screen and (max-width:48rem) {
       &:not(:first-child){
         padding-block: 2em;
@@ -17,7 +17,6 @@
       background-color: var(--bg500);
     }
   }
-  
 }
 
 
