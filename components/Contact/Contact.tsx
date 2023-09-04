@@ -1,16 +1,51 @@
+"use client"
 import { ContactCardData } from '@/constants/data'
 import { ContactCard } from '..'
 import './Contact.scss'
+import toast from 'react-hot-toast';
+import { useState } from 'react';
 
-
-const sendEmail = (e: any) => {
-  e.preventDefault();
-
-  e.target.reset();
-  alert("Thank You! your message has been received");
-}
 
 export default function Contact() {
+  const [data, setData] = useState({
+    yourName: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+    // Define a function to handle form input changes
+    const handleInputChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+      const { name, value } = e.target;
+      
+      // Update the formData state with the new value
+      setData({
+        ...data,
+        [name]: value,
+      });
+    };
+
+  const sendEmail = async (e: React.ChangeEvent<HTMLSelectElement>)=>{
+    e.preventDefault();
+
+    const response = await fetch('/api/send', {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+
+    if (response.status === 200){
+      setData({
+        yourName: "",
+        email: "",
+        subject: "",
+        message: "",
+      })
+      toast.success(`Hi ${data.yourName}, your message was sent successfully!`)
+    }
+  }
   return (
     <div className="contact-container container">
         <div className="col-1">
@@ -27,25 +62,41 @@ export default function Contact() {
             <h2>
               Say Something
             </h2>
-        <form className="form" onSubmit={sendEmail}  >
-            <input 
+        <form className="form" onSubmit={sendEmail}>
+
+           <input  
             className='inputs'  
             type="text" 
             name="name" 
             id="name" 
-            placeholder='Name'
-            />
-            <input  
+            value={data.yourName}
+            onChange={handleInputChange}
+            placeholder='name' />
+           <input  
             className='inputs'  
             type="email" 
             name="email" 
             id="email" 
+            value={data.email}
+            onChange={handleInputChange}
             placeholder='Email' />
+
+            <input 
+            className='inputs'  
+            type="text" 
+            name="subject" 
+            id="subject" 
+            value={data.subject}
+            onChange={handleInputChange}
+            placeholder='Subject'
+            />
 
             <textarea
             className='inputs' 
             name="message" 
             id="message"
+            value={data.message}
+            onChange={handleInputChange}
             placeholder='Message' ></textarea>
             <input className='btn btn-primary' type="submit" value="SEND MESSAGE" />
           </form>

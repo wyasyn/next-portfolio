@@ -3,6 +3,7 @@ import { Footer, NavBar } from '@/components'
 import './globals.scss'
 import type { Metadata } from 'next'
 import { ThemeProvider } from '@/components/contexts/ThemeContext'
+import { Toaster } from 'react-hot-toast'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ywalum.com'),
@@ -77,6 +78,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ThemeProvider>
+          <Toaster position='top-right' toastOptions={{ duration: 3000 }} />
           <header>
               <NavBar />
           </header>
@@ -85,5 +87,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  ) 
 }

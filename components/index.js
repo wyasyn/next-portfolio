@@ -14,3 +14,4 @@ export {default as BlogCard } from "./BlogCard/BlogCard";
 export {default as Contact } from "./Contact/Contact";
 export {default as ContactCard } from "./ContactCard/ContactCard";
 export {default as Map } from "./Map/Map";
+export {default as Email } from "./Email/Email";
