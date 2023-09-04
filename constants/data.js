@@ -238,7 +238,7 @@ export const ContactCardData = [
         icon: <FaWhatsapp />,
         title: "WhatsApp",
         info: "Chat with Us",
-        link: "https://api.whatsapp.com/send?phone+256750771111"
+        link: "https://wa.me/+256750771111"
     },
     {
         icon: <FiMail />,

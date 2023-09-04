@@ -15,7 +15,7 @@ export default function Contact() {
   });
 
     // Define a function to handle form input changes
-    const handleInputChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const handleInputChange = (e: any) => {
       const { name, value } = e.target;
       
       // Update the formData state with the new value
@@ -25,7 +25,7 @@ export default function Contact() {
       });
     };
 
-  const sendEmail = async (e: React.ChangeEvent<HTMLSelectElement>)=>{
+  const sendEmail = async (e: any)=>{
     e.preventDefault();
 
     const response = await fetch('/api/send', {
