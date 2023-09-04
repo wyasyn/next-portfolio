@@ -3,6 +3,7 @@ import './Footer.scss'
 import { useTheme } from '../contexts/ThemeContext'
 import { socialsData } from '@/constants/data';
 import { FaPaperPlane } from 'react-icons/fa';
+import { useRef } from 'react';
 
 export default function Footer() {
   const { theme } = useTheme();
@@ -10,9 +11,8 @@ export default function Footer() {
 
   const sendEmail = (e: any) => {
     e.preventDefault();
-  
-    e.target.reset();
-    alert("Thank You! your message has been received");
+      e.target.reset();
+        alert("Thank You! your message has been received");
   }
 
   return (
