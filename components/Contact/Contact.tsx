@@ -64,14 +64,15 @@ export default function Contact() {
             </h2>
         <form className="form" onSubmit={sendEmail}>
 
-           <input  
+          <input  
             className='inputs'  
             type="text" 
-            name="name" 
+            name="yourName"  // Change "name" to "yourName"
             id="name" 
             value={data.yourName}
             onChange={handleInputChange}
             placeholder='name' />
+
            <input  
             className='inputs'  
             type="email" 
