@@ -3,16 +3,36 @@ import './Footer.scss'
 import { useTheme } from '../contexts/ThemeContext'
 import { socialsData } from '@/constants/data';
 import { FaPaperPlane } from 'react-icons/fa';
+import { useState } from 'react';
+import toast from 'react-hot-toast';
 
 export default function Footer() {
   const { theme } = useTheme();
   const currentDate = new Date().getFullYear()
 
-  const sendEmail = (e: any) => {
-    e.preventDefault();
-      e.target.reset();
-        alert("Thank You! your message has been received");
+  const [message, setMessage] = useState('')
+
+  const handleChange = (e: any) => {
+    setMessage(e.target.value);
   }
+
+  const sendEmail = async (e:any) => {
+    e.preventDefault();
+
+    const response = await fetch('/api/footer', {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(message)
+    })
+
+    if (response.status === 200){
+      setMessage('')
+      toast.success(`Hi, your message was sent successfully!`)
+    }
+  }
+
 
   return (
     <footer className={`footer ${theme}`}>
@@ -28,8 +48,16 @@ export default function Footer() {
           </div>
           <form className="form" onSubmit={sendEmail}>
             <label htmlFor="message" className='label'>hi</label>
-            <input className='msg' type="text" name="message" id="message" placeholder='Say hi!' />
-            <button className='btn-form center' type='submit'> <span>send</span> <FaPaperPlane /> </button>
+            <input
+             className='msg'
+              type="text" 
+              name="message"
+               id="message" 
+               onChange={handleChange}
+               value={message}
+               placeholder='Say hi!'
+                />
+            <button className='btn-form center' onSubmit={sendEmail} type='submit'> <span>send</span> <FaPaperPlane /> </button>
           </form>
           <p className="c-right">
             @{currentDate} Yasin Walum. All Rights Reserved.
