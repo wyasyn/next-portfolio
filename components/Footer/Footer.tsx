@@ -3,7 +3,6 @@ import './Footer.scss'
 import { useTheme } from '../contexts/ThemeContext'
 import { socialsData } from '@/constants/data';
 import { FaPaperPlane } from 'react-icons/fa';
-import { useRef } from 'react';
 
 export default function Footer() {
   const { theme } = useTheme();
