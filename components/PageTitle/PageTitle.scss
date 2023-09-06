@@ -16,4 +16,11 @@
         max-width: 35rem;
     }
     }
+    @media screen and (max-width:48rem) {
+        -webkit-border-radius: 0 0 2em 2em;
+        -moz-border-radius: 0 0 2em 2em;
+        -ms-border-radius: 0 0 2em 2em;
+        -o-border-radius: 0 0 2em 2em;
+        border-radius: 0 0 2em 2em;
+}
 }

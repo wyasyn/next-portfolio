@@ -38,8 +38,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/assets/blogMe.jpg",
-        width: 183,
-        height:204,
+        width: 1080,
+        height:760,
         alt: "Yasin Walum",
       },
     ],
@@ -57,8 +57,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/assets/blogMe.jpg",
-        width: 183,
-        height:204,
+        width: 1080,
+        height:760,
         alt: "Yasin Walum",
       }
     ],

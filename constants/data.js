@@ -129,9 +129,9 @@ export const ProjectsData = [
 
 export const TestimonialData = [
     {
-      name:'Joanitah Muki',
+      name:'AbdulRahim Magomu',
       photo: "/assets/profile2.jpg" ,
-      title: 'CEO',
+      title: 'CEO RahStduio',
       comment: "He brought our vision to life with an incredible eye for design and attention to detail. Our website now looks and feels so much more engaging and user-friendly. We're thrilled with the results and highly recommend his services"
     },
     {

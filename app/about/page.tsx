@@ -1,7 +1,7 @@
 "use client"
 import { useTheme } from '@/components/contexts/ThemeContext';
 import styles from '../page.module.scss'
-import { PageTitle } from '@/components';
+import { PageTitle, Services, Skills, AboutSec, AboutPics } from '@/components';
 import { about } from '@/constants/data';
 
 
@@ -16,13 +16,16 @@ export default function About() {
           />
         </div>
         <section>
-          skills
+          <AboutSec />
         </section>
         <section>
-          services
+          <Skills />
         </section>
         <section>
-          education
+          <Services />
+        </section>
+        <section>
+          <AboutPics />
         </section>
     </main>
     </div>

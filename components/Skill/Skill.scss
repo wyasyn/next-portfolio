@@ -1,0 +1,82 @@
+.skill {
+    position: relative;
+    background-color: var(--clr-text);
+    width: 16rem;
+    height: 10rem;
+    overflow: hidden;
+    -webkit-border-radius: 1.5rem 1.5rem 0 1.5rem;
+    -moz-border-radius: 1.5rem 1.5rem 0 1.5rem;
+    -ms-border-radius: 1.5rem 1.5rem 0 1.5rem;
+    -o-border-radius: 1.5rem 1.5rem 0 1.5rem;
+    border-radius: 1.5rem 1.5rem 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+    .icon {
+        color: var(--bg500);
+        font-size: 3.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .name {
+        background-color: var(--bg500);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: .3em 1.6em;
+        -webkit-border-radius: 1em 0 0 0;
+        -moz-border-radius: 1em 0 0 0;
+        -ms-border-radius: 1em 0 0 0;
+        -o-border-radius: 1em 0 0 0;
+        border-radius: 1em 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+    }
+    .overlay {
+        visibility: hidden;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+        color: var(--clr-text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        p {
+            text-align: center;
+            color: #d1d1d1;
+        }
+    }
+    &:hover {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        opacity: .9;
+        .overlay {
+            visibility: visible;
+        }
+        .icon {
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+        .name {
+            color: var(--primary);
+        }
+    }
+}

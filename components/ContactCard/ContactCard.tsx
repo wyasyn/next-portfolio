@@ -11,7 +11,7 @@ type Info = {
 export default function ContactCard(props: Info) {
   const {icon, title, info, link} = props
   return (
-    <a href={link} className="contact-card" target='_blank' rel='noreferrer'>
+    <a href={link} className="contact-card">
         <div className="icon">
             {icon}
         </div>

@@ -1,0 +1,10 @@
+.skills {
+    padding-bottom: 7em;
+    .skills-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3.2rem;
+    }
+}

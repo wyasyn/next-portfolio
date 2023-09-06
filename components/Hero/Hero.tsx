@@ -46,6 +46,8 @@ export default function Hero() {
                 width={450}
                 height={627}
                 className='pro-image'
+                priority={true}
+                title='Yasin Walum'
                  />
             </div>
             <div className="media">
