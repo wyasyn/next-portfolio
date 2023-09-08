@@ -6,7 +6,7 @@ type Card = {
     image: string
     title: string
     link: string
-    project: string
+    project ?: string
 }
 
 function ProjectCard(props: Card) {
@@ -21,7 +21,9 @@ function ProjectCard(props: Card) {
                 height={720}
                 className='img'
              />
-            <p className="icon absolute">{project}</p>
+             {
+                project &&  <p className="icon absolute">{project}</p>
+             }
             <div className="link center absolute">
                 <a href={link} className="btn btn-primary" target='_blank' rel='noreferrer'>View</a>
             </div>

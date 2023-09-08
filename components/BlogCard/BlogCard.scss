@@ -1,38 +1,55 @@
 .blog-card {
-    display:  grid;
-    grid-template-columns: 1fr 2fr;
-    background-color: var(--bg500);
-    box-shadow: 0 0 5px rgba(0,0,0,0.25);
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    max-width: 50rem;
-    margin-inline: auto;
-    max-height: 10rem;
-    .img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    .image {
+        width: 15rem;
+        height: 15rem;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        overflow: hidden;
+        .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media screen and (min-width:64rem){
+            width: 20rem;
+            height: 20rem;
+        }
     }
     .card-content {
-        padding: 0.7em 1.5em;
-        display: grid;
-        gap: 0.3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+        text-align: center;
         h3 {
-            font-family: 'Recoleta';
-            color: var(--clr--heading);
+            text-wrap: balance;
+            font-size: 1.4rem;   
+        }
+        p {
+            max-width: 32rem;
         }
         .btn-card {
             color: var(--primary);
+            padding-block: 0.5em;
+        }
+        @media screen and (min-width:48rem){
+            align-items: flex-start;
+            text-align: left;
         }
     }
-    @media screen and (max-width:48rem) {
-        max-height: 40rem;
-    }
-    @media screen and (max-width:28.125rem) {
-        grid-template-columns: 1fr;
+    @media screen and (min-width:48rem) {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10rem;
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
     }
 }

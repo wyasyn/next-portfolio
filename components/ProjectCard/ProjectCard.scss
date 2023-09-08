@@ -7,6 +7,7 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     border-radius: 10px;
+    width: 100%;
     .image {
         width: 100%;
         aspect-ratio: 16/9;
@@ -21,10 +22,10 @@
             top: 1rem;
             left: 1rem;
             z-index: 2;
-            font-size: 0.65rem;
-            color: var(--primary);
-            padding: 0.2em 0.65em;
-            background-color: rgb(188, 221, 236);
+            font-size: 0.75rem;
+            color: var(--clr-heading);
+            padding: 0.3em 0.75em;
+            background-color: var(--bg400);
             width: -moz-fit-content;
             width: fit-content;
             -webkit-border-radius: 5px;

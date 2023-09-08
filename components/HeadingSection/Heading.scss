@@ -1,4 +1,5 @@
 .section-heading {
+    position: relative;
     font-family: 'Recoleta';
     letter-spacing: 2px;
     font-size: 2rem;
@@ -6,7 +7,22 @@
     margin-block: 2em;
     color: var(--clr-heading);
     text-align: center;
+    padding-block: 0.6em;
     @media screen and (max-width:48rem) {
         margin-block: 1.7em;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 12rem;
+        background-color: var(--primary);
+        left: 50%;
+        bottom: 0;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
     }
 }

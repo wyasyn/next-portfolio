@@ -61,7 +61,7 @@ export const FeaturedProjects = [
         title:"Loop Studio landing Page",
         image:"/assets/project3.jpg",
         link:"https://loopstudio256.netlify.app/",
-        project: "website"
+        project: ""
     },
     {
         title:"Blogr Landing Page",
@@ -81,7 +81,7 @@ export const ProjectsData = [
         title:"Loop Studio landing Page",
         image:"/assets/project3.jpg",
         link:"https://loopstudio256.netlify.app/",
-        project: "website"
+        project: ""
     },
     {
         title:"Blogr Landing Page",
@@ -123,7 +123,7 @@ export const ProjectsData = [
         title:"Web developer Portfolio",
         image:"/assets/projects9.jpeg",
         link:"https://ywalum.com/",
-        project: "website"
+        project: ""
     },
 ]
 

@@ -74,6 +74,7 @@ export default function NavBar() {
                       width={24}
                       height={32}
                       alt='logo'
+                      priority={true}
                     /> 
                  :
                   <Image
@@ -81,6 +82,7 @@ export default function NavBar() {
                     width={24}
                     height={32}
                     alt='logo'
+                    priority={true}
                 />
                   }
                 </Link>
