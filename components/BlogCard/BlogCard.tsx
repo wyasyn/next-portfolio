@@ -29,7 +29,7 @@ export default function BlogCard(props: Card) {
             <p>
                 {article}
             </p>
-            <a href={link} className="btn-card" target='_blank' rel='noreferrer'>view</a>
+            <a href={link} className="btn" target='_blank' rel='noreferrer'>view</a>
          </div>
     </article>
   )
