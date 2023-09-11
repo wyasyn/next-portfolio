@@ -3,10 +3,12 @@ import './AboutPics.scss'
 
 const AboutPicsData = [
     {
-        url: '/assets/abt1.jpg'
+        url: '/assets/abt1.jpg',
+        blur: '/blur/abt1.jpg'
     },
     {
-        url: '/assets/abt2.jpg'
+        url: '/assets/abt2.jpg',
+        blur: '/blur/abt2.jpg'
     },
 ]
 
@@ -15,14 +17,19 @@ function AboutPics() {
     <div className="about-pics-container container">
         {
             AboutPicsData.map(data => (
-                <Image
+                <div className="image"
                     key={data.url}
-                    src={data.url}
-                    alt='abt pics'
-                    title='Yasin walum'
-                    width={1080}
-                    height={1512}
-                />
+                >
+                    <Image
+                        src={data.url}
+                        alt='abt pics'
+                        title='Yasin walum'
+                        width={1080}
+                        height={1512}
+                        placeholder='blur'
+                        blurDataURL={data.blur}
+                    />
+                </div>
             ))
         }
     </div>
