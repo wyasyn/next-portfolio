@@ -55,19 +55,22 @@ export const FeaturedProjects = [
         title:"RahStduio Consults & Construction",
         image:"/assets/project4.jpg",
         link:"https://rahstudio.netlify.app/",
-        project: "website"
+        project: "website",
+        blur: "/blur/project4.jpg"
     },
     {
         title:"Loop Studio landing Page",
         image:"/assets/project3.jpg",
         link:"https://loopstudio256.netlify.app/",
-        project: ""
+        project: "",
+        blur: "/blur/project3.jpg"
     },
     {
         title:"Blogr Landing Page",
         image:"/assets/project2.jpg",
         link:"https://blogr256.netlify.app/",
-        project: "website"
+        project: "website",
+        blur: "/blur/project2.jpg"
     },
 ]
 export const ProjectsData = [
@@ -75,55 +78,64 @@ export const ProjectsData = [
         title:"RahStduio Consults & Construction",
         image:"/assets/project4.jpg",
         link:"https://rahstudio.netlify.app/",
-        project: "website"
+        project: "website",
+        blur: "/blur/project4.jpg"
     },
     {
         title:"Loop Studio landing Page",
         image:"/assets/project3.jpg",
         link:"https://loopstudio256.netlify.app/",
-        project: ""
+        project: "",
+        blur: "/blur/project3.jpg"
     },
     {
         title:"Blogr Landing Page",
         image:"/assets/project2.jpg",
         link:"https://blogr256.netlify.app/",
-        project: "website"
+        project: "website",
+        blur: "/blur/project2.jpg"
     },
     {
         title:"Personal Portfolio",
         image:"/assets/project1.jpg",
         link:"https://yasyn.netlify.app",
-        project: "website"
+        project: "website",
+        blur: "/blur/project1.jpg"
     },
     {
         title:"Grilli Restaurant",
         image:"/assets/project5.jpg",
         link:"https://zingy-conkies-89afef.netlify.app/",
-        project: "website"
+        project: "website",
+        blur: "/blur/project5.jpg"
     },
     {
         title:"Insure Landing Page",
         image:"/assets/project6.jpg",
         link:"https://mellow-croissant-797345.netlify.app/",
-        project: "website"
+        project: "website",
+        blur: "/blur/project6.jpg"
     },
     {
         title:"Huddle Landing Page",
         image:"/assets/project7.jpg",
         link:"https://huddle256.netlify.app/",
-        project: "website"
+        project: "website",
+        blur: "/blur/project7.jpg"
     },
     {
         title:"Nike Shoe Show case",
         image:"/assets/project8.jpg",
         link:"https://gleeful-longma-0c7fd6.netlify.app/",
-        project: "website"
+        project: "website",
+        blur: "/blur/project8.jpg"
     },
     {
         title:"Web developer Portfolio",
         image:"/assets/projects9.jpeg",
         link:"https://ywalum.com/",
-        project: ""
+        project: "",
+        blur: "/blur/project9.jpg"
     },
 ]
 
@@ -186,48 +198,56 @@ export const BlogData = [
     {
         title:"Significance of Web Accessibility",
         image:"/assets/fb1.jpg",
+        blur: "/blur/fb1.jpg",
         article:"Web accessibility is the practice of designing and developing websites and applications to ensure that people with disabilities can perceive, interact with, and navigate digital content effectively.",
         link:"https://www.linkedin.com/pulse/front-end-developers-risk-best-replaced-ai-yasin-walum"
     },
     {
         title:"Combining CSS Grid and Flexbox",
         image:"/assets/fb2.jpg",
+        blur: "/blur/fb2.jpg",
         article:"Experiment, iterate, and explore different possibilities to create visually appealing and responsive designs using CSS Grid and Flexbox.",
         link:"https://www.linkedin.com/pulse/why-you-need-website-your-business-yasin-walum"
     },
     {
         title:"Comparing Modern Javascript FrameWorks:",
         image:"/assets/fb3.jpg",
+        blur: "/blur/fb3.jpg",
         article:"React, Vue.js, and Angular each have their strengths and weaknesses. All three frameworks have thriving communities and are capable of building modern, responsive web applications",
         link:"https://www.linkedin.com/pulse/importance-responsive-design-yasin-walum"
     },
     {
         title:"SEO Optimization:",
         image:"/assets/fb4.jpg",
+        blur: "/blur/fb4.jpg",
         article:"Optimizing website performance is crucial for delivering a great user experience, improving search engine rankings, and increasing conversions.",
         link:"https://www.linkedin.com/pulse/importance-responsive-design-yasin-walum"
     },
     {
         title:"State management in react:",
         image:"/assets/fb5.jpg",
+        blur: "/blur/fb5.jpg",
         article:"State management is a critical aspect of building complex React applications, especially when you need to share and manage data across different components",
         link:"https://www.linkedin.com/pulse/importance-responsive-design-yasin-walum"
     },
     {
         title:"Main features of a Portfolio website:",
         image:"/assets/fb6.jpg",
+        blur: "/blur/fb6.jpg",
         article:"A well-designed portfolio website is a crucial tool for showcasing your skills, work, and accomplishments.",
         link:"https://www.linkedin.com/pulse/importance-responsive-design-yasin-walum"
     },
     {
         title:"Role of AI in frond-end development",
         image:"/assets/fb7.jpg",
+        blur: "/blur/fb7.jpg",
         article:"Front-end developers are not at immediate risk of being replaced by AI, but the role of front-end development is evolving alongside advancements in technology, including AI and automation",
         link:"https://www.linkedin.com/pulse/front-end-developers-risk-best-replaced-ai-yasin-walum"
     },
     {
         title:"Importance of Responsive Design:",
         image:"/assets/fb8.jpg",
+        blur: "/blur/fb8.jpg",
         article:"Responsive design is crucial in today's digital landscape where users access websites and applications from a wide range of devices with varying screen sizes and orientations",
         link:"https://www.linkedin.com/pulse/importance-responsive-design-yasin-walum"
     },

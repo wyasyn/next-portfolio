@@ -3,7 +3,7 @@ import { ContactCardData } from '@/constants/data'
 import { ContactCard } from '..'
 import './Contact.scss'
 import toast from 'react-hot-toast';
-import { useState } from 'react';
+import { ChangeEvent, FormEvent, useState } from 'react';
 
 
 export default function Contact() {
@@ -25,7 +25,7 @@ export default function Contact() {
       });
     };
 
-  const sendEmail = async (e: any)=>{
+  const sendEmail = async (e: FormEvent )=>{
     e.preventDefault();
 
     const response = await fetch('/api/send', {

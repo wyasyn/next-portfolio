@@ -7,10 +7,11 @@ type Card = {
     title: string
     article: string
     link: string
+    blur: string
 }
 
 export default function BlogCard(props: Card) {
-    const {image, title, article, link} = props
+    const {image, title, article, link, blur} = props
   return (
     <article className='blog-card'>
         <div className="image center">
@@ -19,6 +20,8 @@ export default function BlogCard(props: Card) {
                 alt='blog image'
                 width={640}
                 height={427}
+                placeholder='blur'
+                blurDataURL={blur}
                 className='img'
             />
         </div>

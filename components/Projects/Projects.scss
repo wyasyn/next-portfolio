@@ -1,8 +1,9 @@
 .projects-container {
     .projects-main {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-        gap: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: 100px;
+        gap: 2rem;
         justify-items: center;
     }
   }
