@@ -3,7 +3,7 @@ import { ContactCardData } from '@/constants/data'
 import { ContactCard } from '..'
 import './Contact.scss'
 import toast from 'react-hot-toast';
-import { ChangeEvent, FormEvent, useState } from 'react';
+import { FormEvent, useState } from 'react';
 
 
 export default function Contact() {

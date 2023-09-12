@@ -10,10 +10,16 @@ export default function Footer() {
   const { theme } = useTheme();
   const currentDate = new Date().getFullYear()
 
-  const [message, setMessage] = useState('')
+  const [data, setData] = useState({
+    message: "",
+  })
 
   const handleChange = (e: any) => {
-    setMessage(e.target.value);
+    const { name, value } = e.target;
+    setData({
+      ...data,
+      [name]: value,
+    });
   }
 
   const sendEmail = async (e:any) => {
@@ -24,11 +30,13 @@ export default function Footer() {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(message)
+      body: JSON.stringify(data)
     })
 
     if (response.status === 200){
-      setMessage('')
+      setData({
+        message: "",
+      })
       toast.success(`Hi, your message was sent successfully!`)
     } else {
       toast.error('Sorry, your message has not been sent')
@@ -56,7 +64,7 @@ export default function Footer() {
               name="message"
                id="message" 
                onChange={handleChange}
-               value={message}
+               value={data.message}
                placeholder='Say hi!'
                 />
             <button className='btn-form center' onSubmit={sendEmail} type='submit'> <span>send</span> <FaPaperPlane /> </button>

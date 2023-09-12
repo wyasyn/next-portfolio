@@ -4,6 +4,7 @@ import './globals.scss'
 import type { Metadata } from 'next'
 import { ThemeProvider } from '@/components/contexts/ThemeContext'
 import { Toaster } from 'react-hot-toast'
+import robots from './robots';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ywalum.com'),
