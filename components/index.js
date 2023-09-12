@@ -15,6 +15,7 @@ export {default as Contact } from "./Contact/Contact";
 export {default as ContactCard } from "./ContactCard/ContactCard";
 export {default as Map } from "./Map/Map";
 export {default as Email } from "./Email/Email";
+export {default as EmailFooter } from "./EmailFooter/EmailFooter";
 export {default as Skills } from "./Skills/Skills";
 export {default as Skill } from "./Skill/Skill";
 export {default as Services } from "./Services/Services";

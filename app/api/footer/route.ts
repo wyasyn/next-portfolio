@@ -1,4 +1,6 @@
+import { EmailFooter } from '@/components';
 import { NextResponse } from 'next/server';
+import React from 'react';
 import { Resend } from 'resend';
 
 const apiKey = process.env.Footer_API_KEY;
@@ -18,7 +20,9 @@ export async function POST( response: any ) {
         from: 'Yasin Walum <email@ywalum.com>',
         to: 'ywalum@gmail.com',
         subject: 'Message from Footer!',
-        text: message,
+        react: React.createElement(EmailFooter, {
+          message: message as string,
+        })
     });
 
     return NextResponse.json(data);
