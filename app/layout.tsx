@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     url: "https://ywalum.com"
   } ,
   icons: {
-    icon: "/assets/logoshade.svg",
-    apple: "/assets/logoshade.svg",
+    icon: "/icons/fav-128x153.png",
+    apple: "/icons/fav-128x153.png",
   },
   openGraph: {
     title: "Yasin Walum | Web Developer Portfolio",

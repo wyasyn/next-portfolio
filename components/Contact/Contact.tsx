@@ -45,6 +45,9 @@ export default function Contact() {
       })
       toast.success(`Hi ${data.yourName}, your message was sent successfully!`)
     }
+    else {
+      toast.error('Sorry!, Your message has not been sent')
+    }
   }
   return (
     <div className="contact-container container">

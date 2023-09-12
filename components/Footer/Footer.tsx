@@ -30,6 +30,8 @@ export default function Footer() {
     if (response.status === 200){
       setMessage('')
       toast.success(`Hi, your message was sent successfully!`)
+    } else {
+      toast.error('Sorry, your message has not been sent')
     }
   }
 
