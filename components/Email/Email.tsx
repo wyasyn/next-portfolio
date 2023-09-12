@@ -28,7 +28,7 @@ export default function Email( {message, email, name}: FormEmailProps ) {
                 <Container>
                     <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
                         <Heading>
-                            You have received a new message from {name}
+                            You have received a new message from {name}.
                         </Heading>
                         <Text>{message}</Text>
                         <Hr />
