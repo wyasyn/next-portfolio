@@ -4,13 +4,12 @@ import './globals.scss'
 import type { Metadata } from 'next'
 import { ThemeProvider } from '@/components/contexts/ThemeContext'
 import { Toaster } from 'react-hot-toast'
-import robots from './robots';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ywalum.com'),
   title: "Yasin Walum | Web Developer Portfolio",
   description: "Yasin Walum - Web Developer Portfolio | Showcasing my creative projects and expertise in web development. Explore my work now!",
-  keywords: "web development, react, scss, sass, web design, portfolio, projects, coding, programming, HTML, CSS, JavaScript, front-end, back-end, responsive design, web applications, software development, developer, coding skills, creative, UI/UX, technology, coding projects, programming languages, website development, software engineer, web solutions, digital portfolio, coding expertise",
+  keywords: "web development,web developer, mathematics tutor in kampala, yasin, walum, yasin walum,Yasin Walum, Yasin, Walum, react, scss, sass, web design, portfolio, projects, coding, programming, HTML, CSS, JavaScript, front-end, back-end, responsive design, web applications, software development, developer, coding skills, creative, UI/UX, technology, coding projects, programming languages, website development, software engineer, web solutions, digital portfolio, coding expertise",
   robots: {
     index: true,
     follow: true,
