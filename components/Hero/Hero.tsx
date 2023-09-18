@@ -21,7 +21,7 @@ export default function Hero() {
                     Yasin Walum
                 </strong>
                 <p className='title'>
-                    Web developer, Data Analyst
+                    Web developer | Data Analyst
                 </p>
             </h1>
             <div className="cta flex">
