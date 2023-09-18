@@ -58,13 +58,13 @@ If you'd like to run a local copy of my portfolio website on your machine, follo
 1. Clone this repository to your local machine using Git:
 
    ```
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/wyasyn/next-portfolio.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd your-repo
+   cd next-portfolio
    ```
 
 3. Install the project dependencies:
