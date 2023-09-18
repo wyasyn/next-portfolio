@@ -28,9 +28,9 @@ function About() {
             transition={{ duration: 1, ease: 'easeInOut' }}
            className="col-2">
             <strong>Yasin Walum</strong>
-            <h3>Front-End Developer</h3>
+            <h3>Web Developer | Data Analyst</h3>
             <p>
-              As a dedicated web developer, I strive to merge design aesthetics with functionality, crafting engaging and user-friendly websites. Whether you&apos;re seeking an expert in front-end development, back-end programming, or both, I am confident that my diverse skill set and innovative approach will captivate your interest. Join me on this journey as we explore the exciting world of web development together.
+            👋 Hello! I'm, a passionate web developer and data analyst with a love for transforming data into meaningful insights and crafting web experiences that leave a lasting impression. With a blend of creativity and analytical prowess, I bring a unique perspective to every project I undertake.
             </p>
             <a href="/assets/resume.pdf" className="btn btn-primary" download='resume' >Download CV <HiOutlineDownload /></a>
           </motion.div>
