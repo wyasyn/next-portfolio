@@ -4,6 +4,9 @@ Welcome to the GitHub repository for my personal portfolio website, ywalum.com. 
 
 ## About Me
 
+![Yasin Walum Image](/public/assets/blogMe.jpg)
+
+
 I am Yasin Walum, a passionate developer and data analyst. My journey in the world of technology has allowed me to work on exciting projects and gain experience in various domains. This portfolio website serves as a showcase of my skills, projects, and achievements.
 
 ## Website Overview
