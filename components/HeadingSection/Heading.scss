@@ -1,6 +1,6 @@
 .section-heading {
     position: relative;
-    font-family: 'Recoleta';
+    font-family: 'Croissant One', cursive;
     letter-spacing: 2px;
     font-size: 2rem;
     text-wrap: balance;
@@ -8,6 +8,7 @@
     color: var(--clr-heading);
     text-align: center;
     padding-block: 0.6em;
+    font-weight: 400;
     @media screen and (max-width:48rem) {
         margin-block: 1.7em;
     }
